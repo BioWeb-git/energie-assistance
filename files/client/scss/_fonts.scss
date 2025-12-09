@@ -3,17 +3,15 @@
  * ======================================== */
 
 // Font
-//$font-family1: "Open Sans", sans-serif;
-//$font-family: $font-family1 !default;
-//$font-weight1: 400 !default;
-//$font-family2: "Oswald", sans-serif !default;
-//$font-weight2: 400 !default;
-
+$font-family1: "Comfortaa", sans-serif;
 $font-family: $font-family1;
+//$font-weight1: 400;
+$font-family2: $font-family1;
+//$font-weight2: 400;
 
 @include font-face("RockSolid Icons", font-files("rocksolid-icons.woff", woff, "rocksolid-icons.ttf", truetype, "rocksolid-icons.svg", svg), "rocksolid-icons.eot", normal, normal);
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 
 @mixin font1() { font: #{$font-weight1} #{$font-size}/#{$line-height} #{$font-family1}; }
 @mixin font1-family() { font-family: #{$font-family1} !important; }
@@ -22,7 +20,7 @@ $font-family: $font-family1;
 .font1{
     @include font1-family;
 }
-.font2{
+.font2{ 
     @include font2-family;
 }
 html{

@@ -25,7 +25,7 @@
 	<?php endif ?>
 	<?php if ($this->subheadline['value']): ?>
 		<<?= $this->subheadline['unit'] ?>
-			class="subhealine <?php echo $this->headlineSize ?>"
+			class="subheadline <?php echo $this->headlineSize ?>"
 			<?php if($this->subHeadlineColor): ?> style="color: #<?php echo $this->subHeadlineColor ?>"<?php endif ?>>
 				<?php echo $this->subheadline['value'] ?>
 		</<?= $this->subheadline['unit'] ?>>
