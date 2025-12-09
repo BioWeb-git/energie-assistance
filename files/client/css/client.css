@@ -17784,7 +17784,7 @@ form select {
 }
 
 .page-header .main-navigation-wrapper .main-navigation {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 .page-header .main-navigation-wrapper .main-navigation .level_1 > li.submenu:hover a, .page-header .main-navigation-wrapper .main-navigation .level_1 > li.submenu:focus a {
   background: white;
@@ -17866,10 +17866,38 @@ form select {
   position: absolute;
   width: 400px;
   padding: 50px;
-  background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0.59) 50%, rgba(255, 255, 255, 0) 60%);
+  background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 60%);
   top: 300px;
   left: 50%;
   transform: translateX(-50%);
+}
+.home-tagline > .master-wrapper .logo-tagline.is-animated {
+  transition: all ease-out 1s;
+  transition-delay: 0.2s;
+  transform: translateX(-50%) translateY(25px);
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-tagline > .master-wrapper .logo-tagline.is-animated {
+    transition: none;
+  }
+}
+.home-tagline > .master-wrapper .logo-tagline.is-animated.in-view {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+.home-tagline .grenouille-top-home.is-animated video {
+  transition: all ease-in-out 1s;
+  transition-delay: .5s;
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-tagline .grenouille-top-home.is-animated video {
+    transition: none;
+  }
+}
+.home-tagline .grenouille-top-home.is-animated.in-view video {
+  opacity: 1;
 }
 .home-tagline .grenouille-top-home .centered-wrapper-background {
   mask-repeat: no-repeat;
