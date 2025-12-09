@@ -179,15 +179,15 @@ body{
     to {
         /* Pour un raccord parfait, utilise la largeur exacte 
        de ton image (ex: 500px) plutôt que % si possible */
-        background-position: 100% 0;
+        background-position: -1800px 0;
     }
 }
 
 .home-tagline {
     >.master-wrapper {
         >.centered-wrapper-background {
-            animation: slideRight 10s linear infinite;
-            background-size: auto 70% !important;
+            animation: slideRight 30s linear infinite;
+            background-size: 1800px 600px !important;
             background-position: 0 0;
             background-repeat: repeat-x;
         }
@@ -196,8 +196,8 @@ body{
             position: absolute;
             width: 400px;
             padding: 50px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.49) 50%, rgba(255, 255, 255, 0) 60%);
-            top: 230px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 60%);
+            top: 300px;
             left: 50%;
             transform: translateX(-50%);
         }
