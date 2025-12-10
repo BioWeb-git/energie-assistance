@@ -6,12 +6,10 @@
 $font-family1: "Comfortaa", sans-serif;
 $font-family: $font-family1;
 //$font-weight1: 400;
-$font-family2: $font-family1;
+$font-family2: $font-family1; 
 //$font-weight2: 400;
 
 @include font-face("RockSolid Icons", font-files("rocksolid-icons.woff", woff, "rocksolid-icons.ttf", truetype, "rocksolid-icons.svg", svg), "rocksolid-icons.eot", normal, normal);
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-//@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 
 @mixin font1() { font: #{$font-weight1} #{$font-size}/#{$line-height} #{$font-family1}; }
 @mixin font1-family() { font-family: #{$font-family1} !important; }
