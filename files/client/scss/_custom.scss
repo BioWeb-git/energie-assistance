@@ -16,8 +16,15 @@
 .tagline {
     container-type: inline-size;
 }
-
+.ext-pdf a{
+    display: inline-block;
+}
 body {
+    .nolink {
+        strong {
+            cursor: default;
+        }
+    }
     &.header-navigation-over {
         .page-header {
 
@@ -74,11 +81,6 @@ body {
     position: fixed;
 }
 
-.nolink {
-    strong {
-        cursor: default;
-    }
-}
 
 .icon-links {
     &.social {
