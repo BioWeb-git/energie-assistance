@@ -249,3 +249,26 @@ body{
 
     }
 }
+.icon-boxes-item-text{ 
+    color : $grey-dark;
+    .-color-inverted &{ 
+    }
+}
+
+.rte{
+    h2{
+        position: relative;
+        color: $color1;
+        font-size: 2.4em;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 8em;
+            height: 2px;
+            background: $grey;
+        }
+    }
+}
