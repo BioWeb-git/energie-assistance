@@ -18357,12 +18357,34 @@ form select {
   background: linear-gradient(to right, #1083c2, #0caadd);
 }
 
-.button, .module-cookiebar-opener, button, .contao-cookiebar .highlight .success, .submit {
+.button, .module-cookiebar-opener,
+button,
+.contao-cookiebar .highlight .success,
+.submit {
   background: linear-gradient(to right, #76b943, #bbd63b);
   border: none;
 }
-.button:hover, .module-cookiebar-opener:hover, .button:focus, .module-cookiebar-opener:focus, button:hover, button:focus, .contao-cookiebar .highlight .success:hover, .contao-cookiebar .highlight .success:focus, .submit:hover, .submit:focus {
+.button:hover, .module-cookiebar-opener:hover, .button:focus, .module-cookiebar-opener:focus,
+button:hover,
+button:focus,
+.contao-cookiebar .highlight .success:hover,
+.contao-cookiebar .highlight .success:focus,
+.submit:hover,
+.submit:focus {
   background: #bbd63b;
+}
+
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6 {
+  color: #0d89c7;
+}
+.sidebar .content-text:not(:last-child) {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #bcbebf;
 }
 
 .headline-box .headline {
@@ -18376,6 +18398,7 @@ form select {
 }
 .headline-box h3 {
   font-size: 1.5em;
+  color: #f69323;
 }
 
 @keyframes floatUpDown {
@@ -18421,17 +18444,21 @@ form select {
 .page-header .main-navigation-wrapper .main-navigation .level_1 > li.submenu:hover a, .page-header .main-navigation-wrapper .main-navigation .level_1 > li.submenu:focus a {
   background: white;
 }
-.page-header .main-navigation-wrapper .main-navigation .level_1 > li a, .page-header .main-navigation-wrapper .main-navigation .level_1 > li strong {
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li a,
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li strong {
   border: none;
   margin-top: 0;
   color: #1083c2;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.page-header .main-navigation-wrapper .main-navigation .level_1 > li a::after, .page-header .main-navigation-wrapper .main-navigation .level_1 > li strong::after {
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li a::after,
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li strong::after {
   bottom: 0 !important;
 }
-.page-header .main-navigation-wrapper .main-navigation .level_1 > li a:hover, .page-header .main-navigation-wrapper .main-navigation .level_1 > li a:focus, .page-header .main-navigation-wrapper .main-navigation .level_1 > li strong:hover, .page-header .main-navigation-wrapper .main-navigation .level_1 > li strong:focus {
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li a:hover, .page-header .main-navigation-wrapper .main-navigation .level_1 > li a:focus,
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li strong:hover,
+.page-header .main-navigation-wrapper .main-navigation .level_1 > li strong:focus {
   color: #76b943;
 }
 .page-header .main-navigation-wrapper .main-navigation .level_1 > li .level_2 > li {
@@ -18493,6 +18520,8 @@ form select {
   background-size: 1800px 600px !important;
   background-position: 0 0;
   background-repeat: repeat-x;
+  background-position: 50% 0%;
+  background-size: 50%;
 }
 .home-tagline > .master-wrapper .logo-tagline {
   position: absolute;
@@ -18517,6 +18546,24 @@ form select {
 .home-tagline > .master-wrapper .logo-tagline.is-animated.in-view {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+.home-tagline .village > .master-wrapper > .centered-wrapper-background {
+  top: 100px;
+  bottom: 0;
+  background-repeat: repeat-x;
+  background-size: 850px;
+  background-position: 50% 0 !important;
+  /* Application du masque */
+  -webkit-mask-mode: luminance;
+  mask-mode: luminance;
+  -webkit-mask-image: url("/files/images/backgrounds/village-mask.jpg");
+  mask-image: url("/files/images/backgrounds/village-mask.jpg");
+  -webkit-mask-position: 50% 0%;
+  mask-position: 50% 0%;
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
+  -webkit-mask-size: 850px;
+  mask-size: 850px;
 }
 .home-tagline .grenouille-top-home.is-animated video {
   transition: all ease-in-out 1s;
@@ -18566,4 +18613,7 @@ form select {
   width: 8em;
   height: 2px;
   background: #bcbebf;
+}
+.rte ul {
+  overflow: hidden;
 }
