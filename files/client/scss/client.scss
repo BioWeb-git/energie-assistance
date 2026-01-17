@@ -260,13 +260,12 @@ body {
 
         .logo-tagline {
             position: absolute;
-            width: 400px;
             padding: 50px;
             background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 60%);
             top: 300px;
             left: 50%;
             transform: translateX(-50%);
-
+            max-width: 400px;
             &.is-animated {
                 @include transition(all ease-out 1s);
                 transition-delay: 0.2s;
