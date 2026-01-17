@@ -187,11 +187,26 @@ body {
     li {
         li {
             color: $white;
+            a{
+                background: darken($color1, 10%);
+            }
         }
     }
-
-    .icon-links:not(.full-links) a::before {
-        background: none;
+    
+    .icon-links{
+        &:not(.full-links) a::before {
+            background: none;
+        }
+        &.full-links{
+            text-align: center;
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-bottom: 1px solid #ffffff14;
+                padding-bottom: 5px;
+            }
+        } 
     }
 }
 

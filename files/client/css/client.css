@@ -18482,8 +18482,21 @@ button:focus,
 .main-navigation-mobile li li {
   color: white;
 }
+.main-navigation-mobile li li a {
+  background: #0a6897;
+}
 .main-navigation-mobile .icon-links:not(.full-links) a::before {
   background: none;
+}
+.main-navigation-mobile .icon-links.full-links {
+  text-align: center;
+}
+.main-navigation-mobile .icon-links.full-links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #ffffff14;
+  padding-bottom: 5px;
 }
 
 .text-intro {
