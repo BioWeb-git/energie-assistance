@@ -26,14 +26,13 @@
         "source": "https://github.com/contao/contao-demo",
         "docs": "https://docs.contao.org"
     },
-    "repositories": [
+    "_repositories": [
         {
             "type": "git",
             "url": "https://github.com/BioWeb-git/bioweb-bundle.git"
         }
     ],
     "require": {
-        "bioweb/bioweb-bundle": "dev-master",
         "codefog/contao-haste": "^5.2",
         "codefog/contao-news_categories": "^4.0",
         "contao-themes-net/font-awesome-inserttag-bundle": "^1.1",
