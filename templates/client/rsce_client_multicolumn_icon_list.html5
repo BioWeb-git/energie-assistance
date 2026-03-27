@@ -18,7 +18,7 @@
 						<?php if ($item->label): ?>
 							<strong><?php echo $item->label ?></strong>
 						<?php endif ?>
-
+<br>
 						<?php if ($item->url): ?>
 							<a href="<?php echo $item->url ?>"<?php if ($item->newWindow): ?> target="_blank" rel="noopener"<?php endif ?>>
 						<?php endif ?>

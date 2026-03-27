@@ -187,18 +187,21 @@ body {
     li {
         li {
             color: $white;
-            a{
+
+            a {
                 background: darken($color1, 10%);
             }
         }
     }
-    
-    .icon-links{
+
+    .icon-links {
         &:not(.full-links) a::before {
             background: none;
         }
-        &.full-links{
+
+        &.full-links {
             text-align: center;
+
             a {
                 display: flex;
                 flex-direction: column;
@@ -206,7 +209,7 @@ body {
                 border-bottom: 1px solid #ffffff14;
                 padding-bottom: 5px;
             }
-        } 
+        }
     }
 }
 
@@ -266,6 +269,7 @@ body {
             left: 50%;
             transform: translateX(-50%);
             max-width: 400px;
+
             &.is-animated {
                 @include transition(all ease-out 1s);
                 transition-delay: 0.2s;
@@ -372,4 +376,16 @@ body {
         overflow: hidden;
     }
 
+}
+
+.stats {
+    background: #f1f9f5;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.tips {
+    background: #f8f9fa;
+    padding: 15px;
+    border: 1px dashed #ccc;
 }

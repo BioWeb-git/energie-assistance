@@ -18639,3 +18639,15 @@ button:focus,
 .rte ul {
   overflow: hidden;
 }
+
+.stats {
+  background: #f1f9f5;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.tips {
+  background: #f8f9fa;
+  padding: 15px;
+  border: 1px dashed #ccc;
+}
