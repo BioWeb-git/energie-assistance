@@ -1,13 +1,115 @@
-.page-316{
-	.logo-tagline{
+.page-316 {
+	.logo-tagline {
 		position: static !important;
-	    margin: 0 auto !important;
-	    transform: none !important;
+		margin: 0 auto !important;
+		transform: none !important;
 	}
 }
-form{
-    .widget{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
+
+form {
+	.widget {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+h3 {
+	font-weight: 900 !important;
+}
+
+.testimonial:before,
+blockquote.testimonial:before {
+	margin: 0;
+}
+
+.home-tagline>.master-wrapper .logo-tagline {
+	width: 100%;
+	max-width: 400px;
+}
+
+@media screen and (max-width: 1000px) {
+	.home-tagline>.master-wrapper .logo-tagline {
+		width: 70%;
+		max-width: 300px;
+		padding: 100px 0;
+		background: radial-gradient(circle, #ffffff 0%, rgba(255, 255, 255, 0.9) 50%, rgba(255, 255, 255, 0) 60%);
+	}
+
+	body {
+		&:not(.home) {
+			.ce_rsce_client_logo {
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+
+			.ce_rsce_client_logo img {
+				width: 100%;
+				max-width: 440px;
+				height: auto;
+			}
+		}
+	}
+}
+
+.rsts-skin-testimonials {
+
+	.rsts-prev,
+	.rsts-next {
+		background-color: #0d89c7 !important;
+
+		&:after {
+			content: "";
+			color: white;
+		}
+
+		&:hover:after {
+			color: white;
+		}
+
+		&:hover {
+			transform: scale(1.2) !important;
+		}
+	}
+
+	.rsts-next {
+		&:after {
+			transform: rotateY(180deg) !important;
+		}
+	}
+}
+
+.rsts-skin-testimonials .rsts-nav a:after {
+	width: 12px;
+	height: 12px;
+}
+
+.testimonial:before,
+blockquote.testimonial:before {
+	position: relative !important;
+	top: 35px;
+}
+
+.premier-plan {}
+
+.grenouille-top-home {
+	max-width: 500px !important;
+	margin: 0 auto;
+}
+
+.home-tagline .village>.master-wrapper>.centered-wrapper-background {
+	top: 100px;
+	bottom: 0;
+	background-repeat: repeat-x;
+	background-size: 850px;
+	background-position: 50% -71px !important;
+	-webkit-mask-mode: luminance;
+	mask-mode: luminance;
+	-webkit-mask-image: url(/files/images/backgrounds/village-mask.jpg);
+	mask-image: url(/files/images/backgrounds/village-mask.jpg);
+	-webkit-mask-position: 50% 0%;
+	mask-position: 50% -71px;
+	-webkit-mask-repeat: repeat-x;
+	mask-repeat: repeat-x;
+	-webkit-mask-size: 850px;
+	mask-size: 850px;
 }
